@@ -13,14 +13,12 @@ def read_data(path: Any = "./data/medic_data.json") -> Any:
 
 
 def get_amounts(data: np.array) -> np.array:
-
     data_amnt = np.array([data.count("I"), data.count("II"), data.count("III"), data.count("IV")])
 
     return data_amnt
 
 
 def visualize_data(before: np.array, after: np.array) -> None:
-
     figure, axis = plt.subplots(figsize=(16, 8))
 
     stages = ["I", "II", "III", "IV"]
